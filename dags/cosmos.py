@@ -2,7 +2,7 @@ from cosmos import DbtTaskGroup, ProjectConfig, ProfileConfig, SnowflakeUserPass
 
 # then, in your DAG
 jaffle_shop = DbtTaskGroup(
-    project_config=ProjectConfig("/opt/airflow/git/airflow-dbt-demo.git/dags/"),
+    project_config=ProjectConfig("/opt/airflow/git/airflow-dbt-demo.git"),
     profile_config=ProfileConfig(
         profile_name="demo_dbt",
         target_name="dev",
