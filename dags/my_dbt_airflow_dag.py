@@ -4,7 +4,7 @@ from airflow.operators.python_operator import PythonOperator
 import subprocess
 
 def run_dbt():
-    dbt_command = "dbt run --profiles-dir https://dbtfile2023.blob.core.windows.net/dbtcontainer/dbt_demo/profiles.yml --profile dbt_demo"
+    dbt_command = "dbt run --profiles-dir https://github.com/nishad800/airflow-dbt-demo.git/dbt_demo/profiles.yml --profile dbt_demo"
     subprocess.run(dbt_command, shell=True)
 
 dag = DAG(
