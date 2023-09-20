@@ -1,4 +1,4 @@
-from cosmos import DbtTaskGroup, ProjectConfig, ProfileConfig, SnowflakeUserPasswordProfileMapping
+from cosmos import DbtTaskGroup, ProjectConfig, ProfileConfig, SnowflakeProfileMapping
 
 # then, in your DAG
 jaffle_shop = DbtTaskGroup(
